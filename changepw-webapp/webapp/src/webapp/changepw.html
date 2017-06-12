@@ -1,0 +1,69 @@
+<style type="text/css" media="all">
+</style>
+
+<!-- just one mode, and some alerts -->
+<div class="e3_tool_header">
+	<div class="e3_tool_mode_title" style="background-image:url(support/icons/user_enrolled.png)">Change Password</div>
+</div>
+
+<div style="color:#b11; font-size:24px; margin-bottom:16px;">Your password is not strong.</div>
+<div class="e3_font">A strong password helps secure your Etudes account from being hacked.<br />Create a <b>strong</b> password that has at least:<ul><li>8 characters.</li><li>A number.</li><li>An upper case letter.</li><li>A lower case letter.</li></ul></div>
+<div class="e3_configurationFeature_body">
+	<div class="e3_configure_set">
+		<div class="e3_configure_set_row">
+			<div class="e3_configure_set_entry_header"  style="width:180px;">Enter New Password:</div>
+			<div class="e3_configure_set_entry_field"><input id="changepw_pw_1" type="password" size="32" /></div>
+		</div>
+		<div class="e3_configure_set_row">
+			<div class="e3_configure_set_entry_header">Verify New Password:</div>
+			<div class="e3_configure_set_entry_field">
+				<input id="changepw_pw_2" type="password" size="32" />
+				<div class="e3_alert e3_offstage" id="changepw_password_alert">Enter the same password in both fields.</div>
+				<div class="e3_alert e3_offstage" id="changepw_password_alert2">Enter a password.</div>
+				<div class="e3_alert e3_offstage" id="changepw_password_alert3">Enter a STRONG password - see rules above.</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div style="color:#b11; font-size:24px; margin-bottom:16px;">Update your account's email address.</div>
+<div class="e3_font">Email is how you can receive important notices from your Etudes classes and <b>the only way</b> to recover a forgotten password.<br />Enter a current and valid email address.</div>
+<div class="e3_configurationFeature_body">
+	<div class="e3_configure_set">
+ 		<div class="e3_configure_set_row">
+			<div class="e3_configure_set_entry_header" style="width:180px;">Email:</div>
+			<div class="e3_configure_set_entry_field"><input id="changepw_email" type="text" size="32" /></div>
+		</div>
+ 		<div class="e3_configure_set_row">
+			<div class="e3_configure_set_entry_header">&nbsp;</div>
+			<div class="e3_configure_set_entry_field">&nbsp;</div>
+		</div>
+ 		<div class="e3_configure_set_row">
+			<div class="e3_configure_set_entry_header"></div>
+			<div class="e3_configure_set_entry_field"><input type="button" value="Change Password" id="changepw_go" /></div>
+		</div>
+	</div>
+</div>
+
+<!-- alerts for invalid data on save -->
+<div id="changepw_alertNoSave_1" title="Problems Exist">
+	<div class="e3_alert">
+		Before pressing "Change Password", enter your new password.
+	</div>
+</div>
+<div id="changepw_alertNoSave_2" title="Problems Exist">
+	<div class="e3_alert">
+		Before pressing "Change Password", enter the same password in both fields.
+	</div>
+</div>
+<div id="changepw_alertNoSave_3" title="Problems Exist">
+	<div class="e3_alert">
+		Before pressing "Change Password", enter a strong password that follows the specified rules.
+	</div>
+</div>
+
+<!-- alert for after password has been changed -->
+<div id="changepw_alertSuccess" title="Password Changed">
+	<div class="e3_info">
+		Your password has been changed.
+	</div>
+</div>
